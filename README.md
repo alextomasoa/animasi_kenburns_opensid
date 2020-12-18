@@ -1,2 +1,2 @@
 # animasi_kenburns_opensid
-Merubah slider OpenSID menjadi Hero Image 100vh dan menerapkan animasi Ken-Burns 
+Untuk merubah slider OpenSID menjadi Hero Image 100vh dan menerapkan animasi Ken-Burns 

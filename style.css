@@ -1,0 +1,71 @@
+   
+   
+   .banner {
+	position:relative;
+	width:100%;
+	height:100vh;
+	background-size: cover;
+   }
+   
+   .banner:after {
+	content:"";
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	background:#2b2f49;
+	opacity:.32;
+	z-index:1;
+	pointer-events:none;
+   }
+
+   .banner-slowmotion {
+	   position: relative;
+   }
+
+   .banner .hero {
+	position: relative;
+	min-height: 600px;
+	min-height: 100vh;
+	overflow: hidden;
+  }
+  
+  .banner .hero .hero__image {
+	position: absolute;
+	min-width: 100%;
+	min-height: 100%;
+	transform-origin: top left;
+	opacity: 0;
+	will-change: opacity, transform;
+  }
+  
+  .banner .hero .hero__image:nth-child(2n) {
+	transform-origin: top right;
+  }
+  
+  .banner .hero .hero__image:nth-child(3n) {
+	transform-origin: bottom right;
+  }
+
+  /*Mulai Animasi Gambar Banner*/
+
+  .banner .hero .js-animating {
+	animation: fade 6s forwards, zoom 30s linear forwards;
+  }
+  
+  .banner .hero .js-animating:first-child + img ~ img {
+	z-index: -1;
+  }
+  
+  @keyframes fade {
+	100% {
+	  opacity: 1;
+	}
+  }
+  
+  @keyframes zoom {
+	100% {
+	  transform: scale(1.2);
+	}
+  }

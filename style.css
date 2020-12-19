@@ -1,5 +1,4 @@
-   
-   
+    
    .banner {
 	position:relative;
 	width:100%;
@@ -72,6 +71,10 @@
 	  transform: scale(1.2);
 	}
   }
+
+/*Akhir Animasi Gambar Banner*/
+
+/*Object Position*/
 
 @media (min-width: 340px) {
 	.banner .hero .hero__image {
